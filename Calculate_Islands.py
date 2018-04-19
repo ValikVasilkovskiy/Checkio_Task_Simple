@@ -11,7 +11,6 @@ def checkio(land_map):
                 else:
                     try:
                         if land_map[i][j] != 2 and land_map[i][j] == 1:
-                            land_map[i][j] = 2
                             counter += dfs(i, j)
                     except IndexError:
                         continue
